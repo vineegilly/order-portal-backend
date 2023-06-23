@@ -19,7 +19,7 @@ app.get('/api', (req, res) => {
       "region": "West",
       "profit": 50,
       "sales": 300,
-      "imageUrl": "https://picsum.photos/500/300",
+      "imageUrl": "https://picsum.photos/id/42/500/300",
       "lineItems":[
         {
           "id": "001-01",
@@ -45,7 +45,7 @@ app.get('/api', (req, res) => {
       "region": "East",
       "profit": 70,
       "sales": 400,
-      "imageUrl": "https://picsum.photos/500/300",
+      "imageUrl": "https://picsum.photos/id/42/500/300",
       "lineItems":[
         {
           "id": "002-01",
@@ -60,7 +60,48 @@ app.get('/api', (req, res) => {
           "sales": 150
         }
       ]
-    }
+    },
+    {
+        "id": "003",
+        "category": "Furniture",
+        "subCategory": "Chairs",
+        "segment": "Home Office",
+        "productName": "Bevis Round",
+        "orderDate": "2023-06-20",
+        "region": "East",
+        "profit": 0,
+        "sales": 0,
+        "imageUrl": "https://picsum.photos/id/42/500/300",
+        "lineItems":[
+          
+        ]
+      },
+      {
+        "id": "004",
+        "category": "Furniture",
+        "subCategory": "Chairs",
+        "segment": "Home Office",
+        "productName": "Bevis Round",
+        "orderDate": "2023-06-20",
+        "region": "East",
+        "profit": 70,
+        "sales": 400,
+        "imageUrl": null,
+        "lineItems":[
+          {
+            "id": "002-01",
+            "item": "ChairA",
+            "profit": 3,
+            "sales": 100
+          },
+          {
+            "id": "002-02",
+            "item": "ChairB",
+            "profit": 1,
+            "sales": 150
+          }
+        ]
+      }
   ]
 
   res.json(dummyData);
